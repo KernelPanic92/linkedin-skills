@@ -1,0 +1,34 @@
+{
+  "name": "linkedin-skills",
+  "owner": {
+    "name": "KernelPanic92",
+    "url": "https://github.com/KernelPanic92"
+  },
+  "metadata": {
+    "description": "LinkedIn automation skill for AI agents, driven by the agent-browser CLI",
+    "version": "2.1.0"
+  },
+  "plugins": [
+    {
+      "name": "linkedin",
+      "description": "Read LinkedIn messages, notifications and feed, search people and jobs, view profiles, save or dismiss job offers, manage invitations, and send messages or connection requests after explicit confirmation.",
+      "source": "./",
+      "strict": false,
+      "version": "2.1.0",
+      "author": {
+        "name": "KernelPanic92"
+      },
+      "keywords": [
+        "linkedin",
+        "social-media",
+        "jobs",
+        "recruiting",
+        "browser-automation",
+        "agent-browser"
+      ],
+      "skills": [
+        "./skills/linkedin"
+      ]
+    }
+  ]
+}
