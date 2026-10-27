@@ -4,10 +4,8 @@
     "name": "KernelPanic92",
     "url": "https://github.com/KernelPanic92"
   },
-  "metadata": {
-    "description": "LinkedIn automation skill for AI agents, driven by the agent-browser CLI",
-    "version": "2.1.0"
-  },
+  "description": "LinkedIn Agent Skill for AI agents, driven by the agent-browser CLI",
+  "version": "2.1.0",
   "plugins": [
     {
       "name": "linkedin",
