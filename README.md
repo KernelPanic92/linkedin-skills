@@ -5,11 +5,14 @@ Agent Skills for LinkedIn, packaged so they can be installed by Claude Code, the
 [Agent Skills](https://agentskills.io/specification) open format.
 
 The skill drives LinkedIn through the
-[agent-browser](https://github.com/vercel-labs/agent-browser) CLI: it checks the
-session, reads messages and notifications, reads the feed, searches people and
-job offers, opens profiles and job details, saves or dismisses jobs, manages
-invitations and — only after explicit confirmation — sends messages and
-connection requests.
+[agent-browser](https://github.com/vercel-labs/agent-browser) CLI. It reads your
+inbox and notifications, the feed and profiles; searches people by role, company,
+school or location and filters by connection degree; searches job offers in
+natural language or with classic filters such as date, experience level, company,
+remote work and city, and opens the full job description; saves, dismisses and
+tracks jobs; manages received and sent invitations. Messages and connection
+requests are sent only after you confirm the exact text and recipient. It does
+not publish posts, edit your profile, or scrape data outside your own account.
 
 ## Features
 
