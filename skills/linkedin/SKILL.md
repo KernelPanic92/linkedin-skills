@@ -3,6 +3,7 @@ name: linkedin
 description: Drive LinkedIn through the agent-browser CLI - check login, read messages and notifications, read the feed, search people and messages, view profiles, search jobs (AI or classic search) with filters, read job details, save or dismiss jobs, manage invitations, and (only after explicit user confirmation) send messages or connection requests. Use when the user asks to look at their LinkedIn inbox or notifications, find someone on LinkedIn, open a LinkedIn profile, search or filter LinkedIn job offers, or write to a LinkedIn contact.
 author: kernelpanic92
 version: 2.1.0
+license: MIT
 ---
 
 # LinkedIn

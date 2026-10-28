@@ -117,6 +117,10 @@ The skill follows the Agent Skills specification:
 - Everything the agent needs to route to the skill is in the description, so it
   triggers on LinkedIn tasks without loading the whole skill up front.
 
+## License
+
+MIT. See [LICENSE](LICENSE).
+
 ## Notes
 
 LinkedIn's terms of service restrict automated access. Use this skill on your own
