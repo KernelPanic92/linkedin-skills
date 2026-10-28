@@ -11,6 +11,32 @@ job offers, opens profiles and job details, saves or dismisses jobs, manages
 invitations and — only after explicit confirmation — sends messages and
 connection requests.
 
+## Features
+
+Every capability is implemented as a separate procedure file under
+`skills/linkedin/features/`, read only when the agent needs it. The safety column
+shows what the skill may do on its own and what always requires your explicit
+confirmation.
+
+| Action | What it covers | Safety |
+| :- | :- | :- |
+| Check login status | Opens `/feed/` and detects logged-in, logged-out or checkpoint states | Read-only |
+| Read messages | Inbox previews without opening conversations, unread detection, thread reading, message search | Read-only; opening an unread thread marks it read, so it asks first |
+| Send a message | Composer, typing, verification and send; in an existing chat or from a profile | Asks first |
+| Read notifications | Notification list, which items are new, quick actions to avoid | Read-only; opening an unread notification marks it read, so it asks first |
+| Read the feed | Posts and their action buttons | Read-only |
+| Search people | People search, degree filters, pagination | Read-only |
+| View a profile | Profile details and header actions, what not to click | Read-only |
+| Send a connection request | Connect button, note dialog, pending state | Asks first |
+| Manage invitations | Received invitations (accept or ignore) and sent invitations | Asks first |
+| Search jobs (AI, default) | Natural-language job search, URL filters, result list, pagination, job details | Read-only |
+| Search jobs (classic) | Boolean query, newest-first sorting, `f_*` filters, city `geoId` lookup | Read-only |
+| Save or dismiss a job | Save or unsave, dismiss or undo, saved-jobs tracker | Asks first |
+| Scroll lazy lists | Loading more items in conversations, notifications, job lists and feed | Read-only |
+
+Outbound and state-changing actions are gated: the skill shows you the exact
+recipient and text, waits for a "yes", and asks again if anything changes.
+
 ## Repository layout
 
 ```
